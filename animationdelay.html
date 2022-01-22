@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 800px;
+  background: red;
+  position: relative;
+  animation: mymove 2s infinite;
+  animation-delay: 0s;
+  animation-direction: alternate;
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+  to {left: 7px;}
+  
+  0% {background: rgb(22, 218, 224); left: 0px;right: 0px;}
+  25% {background: tomato; left: 1000px;right: 0px;}
+  50% {background: rgb(44, 10, 4); left: 1000px;right: 1000px;}
+  75% {background: rgb(236, 240, 7); left: 0px;right: 1000px;}
+  100% {background: rgb(33, 224, 119); left: 0px;right: 0px;}
+}
+</style>
+</head>
+<body>
+<h1>The animation-delay Property</h1>
+<p>Start the animation after 2 seconds:</p>
+<div></div>
+</body>
+</html>
